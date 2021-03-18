@@ -1,5 +1,4 @@
-//*primer event q ayuda al brosser*//
-
+//*primer event q ayud al brosser*//
 window.onload = function() {
   document.querySelector("#btn").addEventListener("click", () => {
     document.querySelector("#the-domain").innerHTML = domaingGenarator();
@@ -7,19 +6,20 @@ window.onload = function() {
   console.log("Hello Rigo from the console! "); 
 };
 
-//func./==>//
+//func./==>
 let domaingGenarator = () => {
-  let prim = ["the", "our"];
-  let secum = ["great", "big"];
-  let trem = ["jogger", "raccon", "limon", "apple"];
+  let prom = ["the", "our"];
+  let sust = ["great", "big"];
+  let adjv = ["jogger", "raccon", "limon", "apple"];
   let comm = [".com", ".net", ".us", ".io", ".es"];
 
-  let prim1 = [Math.floor(Math.random() * prim.length)];
-  let secum1 = [Math.floor(Math.random() * secum.length)];
-  let trem1 = [Math.floor(Math.random() * trem.length)];
+//[Math.floor(Math.random/aleatorio
+  let prim1 = [Math.floor(Math.random() * prom.length)];
+  let secum1 = [Math.floor(Math.random() * sust.length)];
+  let adjv2 = [Math.floor(Math.random() * adjv.length)];
   let comm1 = [Math.floor(Math.random() * comm.length)];
 
   return (
-    prim[prim1] + secum[secum1] + trem[trem1] +  comm[comm1]
+    prom[prim1] + sust[secum1] + adjv[adjv2] +  comm[comm1]
   );
 };
